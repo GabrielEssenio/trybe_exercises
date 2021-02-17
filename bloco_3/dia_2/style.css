@@ -1,0 +1,29 @@
+
+        body{
+            font-size: 16px;
+            font-style: oblique;
+        }
+        h1{
+            font-size: 65px ;
+            color:orange;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+        .lista-cores{
+            background-color: greenyellow;
+        }
+        .cor-favorita{
+            background-color:rgb(152, 86, 202);
+        }
+        p{
+            font-size: 3em;
+        }
+        #cor-amarelo{
+            background-color: yellow;
+        }
+        #cor-vermelho{
+            background-color: blue;
+        }
+        #cor-marrom{
+            background-color: brown;
+        }

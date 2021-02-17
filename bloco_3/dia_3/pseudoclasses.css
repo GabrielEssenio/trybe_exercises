@@ -1,0 +1,33 @@
+ 
+div:hover {
+    border: 2px dashed rgb(46, 41, 41);
+}
+
+div:nth-of-type(1){
+    color: rgb(11, 78, 61);
+}
+
+div:nth-of-type(2){
+    color: rgb(53, 56, 184);
+}
+
+div:nth-of-type(3){
+    color: rgb(208, 219, 105);
+    height: 50px;
+}
+
+div:nth-of-type(4){
+    color: rgb(212, 59, 90);
+}
+
+div:nth-of-type(5){
+    color: rgb(255, 0, 0);
+}
+
+h3:hover {
+   background-color: rgb(0, 255, 64); 
+}
+
+div:nth-of-type(2n+1) h3 {
+    font-style: italic;
+}
