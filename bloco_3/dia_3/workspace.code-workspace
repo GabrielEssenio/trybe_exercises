@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../trybe_portifolio"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "trybe_portifolio"
+	}
+}
