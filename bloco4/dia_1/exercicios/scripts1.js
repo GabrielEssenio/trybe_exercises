@@ -8,3 +8,4 @@ birthCity = "Brasilia"
 console.log(birthYear)
 console.log(birthCity)
 console.log(name)
+
