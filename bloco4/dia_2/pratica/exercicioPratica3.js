@@ -5,10 +5,10 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let somaNumbers = 0;
 for(cont = 0; cont < numbers.length ; cont ++){
     
-    somaNumbers = numbers[cont] + somaNumbers;
+    somaNumbers += numbers[cont] ;
     
 }
 let mediaAritmetrica = somaNumbers/numbers.length; 
 
-console.log(mediaAritmetrica);
-console.log(somaNumbers);
+console.log("A meida Aritmetrica é" + mediaAritmetrica);
+console.log("A soma dos numero é de " + somaNumbers);
