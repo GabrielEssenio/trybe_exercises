@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //exercicio 1
+      let elementoH1 = document.createElement("h1");
+        elementoH1.innerText = "Exercício 5.2 - JavaScript DOM ";
+        document.body.appendChild(elementoH1);
+
+        //exercicio 2
+        let elementoDiv = document.createElement("div");
+        elementoDiv.className = "main-content";
+        document.body.appendChild(elementoDiv);
+
+        //exercicio 3
+        let elementoDivFilho = document.createElement("div");
+        elementoDivFilho.className = "center-content";
+        elementoDiv.appendChild(elementoDivFilho);
+
+        //exercicio 4
+
+        let elementoPFilhoDiv = document.createElement("p");
+        elementoPFilhoDiv.innerText = "Esse é o paragrafo mais bonito do mundo , diria que até do Brasil.";
+        elementoDivFilho.appendChild(elementoPFilhoDiv);
+
+        //exercicio 5
+        let elementoDivFilho2 = document.createElement("div");
+        elementoDivFilho2.className = "left-content";
+        elementoDiv.appendChild(elementoDivFilho2);
+
+        //eexercicio 6
+        let elementoDivFilho3 = document.createElement("div");
+        elementoDivFilho3.className = "right-content";
+        elementoDiv.appendChild(elementoDivFilho3);
+
+        //exercicio 7
+        let elementoImagem = document.createElement("img");
+        elementoImagem.className = "small-image";
+        elementoImagem.src = "https://picsum.photos/200";
+        elementoDivFilho2.appendChild(elementoImagem);
+
+        //exercicio 8
+        const elementUl = document.createElement('ul');
+        elementoDivFilho3.appendChild(elementUl);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let num in arrayNumbers) {
+      const elementLi = document.createElement('li');
+      elementLi.innerHTML = arrayNumbers[num];
+      elementUl.appendChild(elementLi);
+    }
+
+            // Exercise - 9
+            for (let index = 1; index <= 3; index++) {
+                const elementH3 = document.createElement('h3');
+                elementH3.innerHTML = 'Show ' + index;
+                elementoDiv.appendChild(elementH3);
+                }
+
+
+          // Segunda Parte
+
+
+        // Exercise 1
+        const title = document.getElementsByTagName('h1')[0];
+        title.className = 'title';
+
+        // Exercise 2
+        const elementsH3 = document.getElementsByTagName('h3');
+        for (let index = 0; index < 3; index++) {
+            elementsH3[index].className = 'description';
+        }
+
+        // Exercise 3
+        const divLeftContent = document.getElementsByClassName('left-content')[0];
+        elementoDiv.removeChild(divLeftContent);
+
+        // Exercise 4
+        const divRightContent = document.getElementsByClassName('right-content')[0];
+        divRightContent.style.marginRight='auto';
+
+        // Exercise 5
+        const divCenterContent = document.getElementsByClassName('center-content')[0];
+        divCenterContent.parentNode.style.backgroundColor = 'green';
+
+        // Exercise 6
+        elementUl.lastChild.remove();
+        elementUl.lastChild.remove();
+
+    </script>
+  </body>
+</html>
