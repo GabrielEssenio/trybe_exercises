@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Document</title>
+
+
+</head>
+
+<body>
+<h1>Formulario Cadastro</h1>
+  <form id="cv-form">
+    <div>
+      <fieldset>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="name">Nome: </label>
+          <input class="form-control" type="text" name="name" id="name" maxlength="40" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="name">Email: </label>
+          <input class="form-control" type="email" name="email" id="email" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="cpf-number">CPF: </label>
+          <input class="form-control" type="text" name="cpf" id="cpf-number" maxlength="14" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="address">Endereço: </label>
+          <input class="form-control" type="text" name="address" id="address" maxlength="200" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="city">Cidade: </label>
+          <input class="form-control" type="text" name="city" id="city" maxlength="200" required>
+        </div>
+        <div class="">
+          <label for="state">Estado: </label>
+          <select class="form-select" name="state" id="state" value="" required>
+            <option selected>Escolha seu estado</option>
+            <option value="df">Brasilia</option>
+            <option value="bh">Belo Horizonte</option>
+            <option value="rj">Rio de Janeiro</option>
+          </select>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="house">Casa </label>
+          <input class="form-check-input" type="radio" name="casa-apartamento" id="house" value="house" required> 
+
+          <input type="radio" name="casa-apartamento" id="apartment" value="apartment" required> 
+          <label class="form-check-label" for="apartment">
+            Apartamento</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="form-floating">
+          <label class="floatingTextarea" for="cv-resume"></label>
+          <textarea class="form-control" id="cv-resume" name="cv-resume" maxlength="1000" cols="100" rows="20" required></textarea>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="position">Cargo: </label>
+          <input class="form-control" type="text" name="position" id="position" maxlength="40" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="description">Descrição do cargo: </label>
+          <input class="form-control" type="text" id="description" name="description" required>
+        </div>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="start-date">Data de início: </label>
+          <input class="form-control" type="text" class="input-data" name="start-date" value="" required>
+        </div>
+      </fieldset>
+      <button class="btn btn-success" type="submit">Enviar</button>
+      <button class="btn btn-warning" type="reset">Limpar</button>
+    </div>
+  </form>
+  <section class=""></section>
+  <script src="script.js"></script>
+</body>
+
+</html>
