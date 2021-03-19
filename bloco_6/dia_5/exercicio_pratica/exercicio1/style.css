@@ -1,0 +1,49 @@
+* {
+border: 0;
+top:0; 
+margin-top:0;
+}
+h1 {
+font-size: 35px;
+}
+h2 {
+font-size:25px
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+    
+}
+.fotos{
+    display: flex;
+}
+
+figcaption{
+    font-size:20px;
+}
+
+@media screen and (max-width:375px){
+    .resumo{
+        background-color: rgb(200, 220, 251);
+        padding: 10px 10px;
+        font-size: 20px;
+      
+    }
+    h1{
+        font-size:40px;
+        justify-content: center;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: column;
+    }
+    figcaption{
+        font-size:28px;
+        padding: 10px 10px;
+    }
+
+}
